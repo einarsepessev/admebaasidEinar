@@ -1,0 +1,12 @@
+cd desktop
+git init 
+git init Admebcd
+cd AdmebaasidEinar
+git config --global user.name "Einar Sepessev"
+git config --global user.email "einar.sepessev@gmail.com"
+git config --global --list
+git status
+-------------
+kui tekkitud uus fail ja salvestatud, siis on vaja add ja commit 
+git add .
+git commit -a -m "põhi ab sõnad on lisatud"
