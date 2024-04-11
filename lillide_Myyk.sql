@@ -152,3 +152,69 @@ kliendikaart varchar(15),
 select * from kliendikaart;
 insert into kliendikaart (kliendikaart)
 values ('platinum'), ('silver'), ('gold');
+
+create table myyk(
+myykID INT primary key identity(1,1),
+kuupaev date,
+tootajaID int,
+kaupID int,
+kogus int,
+hind decimal(7,2),
+kliendikaartID int,
+foreign key (tootajaID) references tootaja(tootajaID),
+foreign key (kaupID) references kaup(kaupID),
+foreign key (kliendikaartID) references kliendikaart(kliendikartID));
+
+select * from myyk
+
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-09-26', 1, 1, '449', 605, 3);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-10-06', 2, 2, '238', 558, 4);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-06-05', 3, 3, '4170', 258, 5);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-09-11', 4, 4, '523', 688, 6);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-05-27', 5, 5, '230', 151, 7);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-02-10', 6, 6, '4722', 357, 8);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-03-20', 7, 7, '50', 672, 9);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-11', 8, 8, '15', 545, 10);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-03', 9, 9, '229', 479, 11);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-04-08', 10, 10, '173', 309, 12);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-11-23', 11, 11, '3', 643, 13);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-12-20', 12, 12, '2662', 134, 14);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-13', 13, 13, '1110', 437, 15);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-08-21', 14, 14, '1112', 465, 16);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-15', 15, 15, '182', 487, 17);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-03-18', 16, 16, '232', 873, 18);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-07-17', 17, 17, '4532', 308, 19);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-08-29', 18, 18, '1810', 892, 20);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-04-24', 19, 19, '9500', 589, 21);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-05-31', 20, 20, '393', 777, 22);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-23', 21, 21, '375', 548, 23);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-11-23', 22, 22, '3260', 645, 24);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-12-16', 23, 23, null, 707, 25);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-05-22', 24, 24, '326', 770, 26);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-08-30', 25, 25, '407', 974, 27);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-07-30', 26, 26, '909', 446, 28);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-02-22', 27, 27, '2026', 869, 29);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-25', 28, 28, '2201', 546, 30);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-02-06', 29, 29, '4989', 580, 31);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-07-03', 30, 30, '60', 312, 32);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-09-06', 31, 31, '1575', 124, 33);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-03-14', 32, 32, '2875', 385, 34);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-02-24', 33, 33, '2780', 345, 35);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-03-26', 34, 34, '228', 951, 36);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-08-21', 35, 35, '30', 730, 37);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-11-08', 36, 36, '1900', 364, 38);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-10-03', 37, 37, '95', 172, 39);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-11-11', 38, 38, '368', 551, 40);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-10-16', 39, 39, '30', 351, 41);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-09-11', 40, 40, '31', 867, 42);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-08', 41, 41, '5007', 784, 43);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-05-11', 42, 42, '803', 984, 44);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-01-15', 43, 43, '46', 912, 45);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-06-03', 44, 44, '760', 223, 46);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-10-31', 45, 45, '65', 960, 47);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-10-10', 46, 46, '630', 411, 48);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-06-24', 47, 47, '935', 816, 49);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-12-18', 48, 48, '1168', 437, 50);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-06-18', 49, 49, '900', 762, 51);
+insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-04-05', 50, 50, '3', 658, 52);
+
