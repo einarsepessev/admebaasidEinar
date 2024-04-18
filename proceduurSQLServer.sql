@@ -80,3 +80,25 @@ EXEC muudatus @tegevus='add', @tabelinimi='tootaja', @veerunimi='test', @tyyp='v
 EXEC muudatus @tegevus='drop', @tabelinimi='tootaja', @veerunimi='test';
 
 select * from tootaja;
+
+----------------------
+
+CREATE PROCEDURE LeiaNime
+@siskaup varchar(15)
+as
+begin
+	select * from kaup
+	where kaup = @siskaup
+end;
+
+exec LeiaNime @siskaup = Toyota;
+
+CREATE PROCEDURE myykKaartID
+@kaartID varchar(1)
+as
+begin
+	select * from myyk
+	where kliendikaartID=@kaartID
+end;
+
+exec myykKaartID @kaartID=2
