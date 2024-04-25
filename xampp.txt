@@ -14,3 +14,16 @@ eesnimi varchar(20),
 perekonnanimi varchar(20),
 isikukood varchar(11) unique
 )
+
+BEGIN
+DECLARE variable1 INT;
+set variable1 = param1 + 1;
+	if variable1 = 0 then
+    	SELECT variable1;
+    end if;
+if param1 = 0 then 
+SELECT 'Parametr value=0';
+	ELSE
+SELECT 'Parametr value <> 0';
+	end if;
+end
